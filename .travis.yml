@@ -2,6 +2,9 @@ language: node_js
 cache:
   directories:
     - ~/.npm
+branches:
+  only:
+    - master
 notifications:
   email: false
 node_js:
@@ -9,6 +12,7 @@ node_js:
 script:
   - yarn test --coverage
   - codecov
+  - yarn build
 after_success:
   - yarn travis-deploy-once "yarn semantic-release"
 branches:

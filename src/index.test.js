@@ -1,7 +1,7 @@
-var lib = require('./index.js');
+import lib from './';
 
-describe('lib', function() {
-  it('returns hello world', function() {
+describe('lib', () => {
+  it('returns hello world', () => {
     expect(lib.createVisualization()).toEqual('Hello World');
   })
 });

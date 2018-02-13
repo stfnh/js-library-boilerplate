@@ -1,7 +1,5 @@
-function createVisualization() {
-  return 'Hello World';
-}
+const createVisualization = () => 'Hello World';
 
-module.exports = {
-  createVisualization: createVisualization
+export default {
+  createVisualization
 };

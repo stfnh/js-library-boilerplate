@@ -2,25 +2,37 @@
   "name": "ephtracking-viz",
   "version": "0.0.0-development",
   "description": "Environmental Public Health Viz",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:stfnh/ephtracking-viz.git",
   "author": "Stefan Hochwarter <stefan.hochwarter@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "jest",
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "commit": "git cz"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
+    "babel-preset-env": "^1.6.1",
     "codecov": "^3.0.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.15.0-rc.8",
     "jest": "^22.2.2",
+    "rimraf": "^2.6.2",
     "semantic-release": "^12.4.1",
     "travis-deploy-once": "^4.3.4"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
