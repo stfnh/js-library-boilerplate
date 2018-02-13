@@ -3,5 +3,5 @@ function createVisualization() {
 }
 
 module.exports = {
-  createVisualization
+  createVisualization: createVisualization
 };
