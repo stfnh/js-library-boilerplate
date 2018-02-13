@@ -1,5 +1,5 @@
 function createVisualization() {
-  return 'Hello Viz';
+  return 'Hello World';
 }
 
 module.exports = {
