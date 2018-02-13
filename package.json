@@ -1,0 +1,9 @@
+{
+  "name": "ephtracking-viz",
+  "version": "0.0.1",
+  "description": "Environmental Public Health Viz",
+  "main": "index.js",
+  "repository": "git@github.com:stfnh/ephtracking-viz.git",
+  "author": "Stefan Hochwarter <stefan.hochwarter@gmail.com>",
+  "license": "MIT"
+}
