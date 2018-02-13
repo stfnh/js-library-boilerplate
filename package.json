@@ -1,15 +1,19 @@
 {
   "name": "ephtracking-viz",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "description": "Environmental Public Health Viz",
   "main": "src/index.js",
   "repository": "git@github.com:stfnh/ephtracking-viz.git",
   "author": "Stefan Hochwarter <stefan.hochwarter@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "jest": "^22.2.2"
+    "jest": "^22.2.2",
+    "travis-deploy-once": "^4.3.4",
+    "semantic-release": "^12.4.1"
   }
 }
