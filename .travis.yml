@@ -8,6 +8,7 @@ node_js:
   - 'node'
 script:
   - yarn test --coverage
+  - codecov
 after_success:
   - yarn travis-deploy-once "yarn semantic-release"
 branches:
