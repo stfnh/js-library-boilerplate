@@ -7,9 +7,9 @@ notifications:
 node_js:
   - 'node'
 script:
-  - npm run test
+  - yarn test --coverage
 after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+  - yarn travis-deploy-once "yarn semantic-release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
