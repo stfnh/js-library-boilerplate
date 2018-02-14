@@ -7,7 +7,7 @@ export default {
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'ephtracking-viz'
+    library: 'js-library-boilerplate'
   },
   devtool: 'source-map',
   module: {

@@ -1,9 +1,9 @@
 {
-  "name": "ephtracking-viz",
+  "name": "js-library-boilerplate",
   "version": "0.0.0-development",
-  "description": "Environmental Public Health Viz",
+  "description": "JS Library Boilderplate",
   "main": "dist/index.js",
-  "repository": "git@github.com:stfnh/ephtracking-viz.git",
+  "repository": "git@github.com:stfnh/js-library-boilerplate.git",
   "author": "Stefan Hochwarter <stefan.hochwarter@gmail.com>",
   "license": "MIT",
   "scripts": {
